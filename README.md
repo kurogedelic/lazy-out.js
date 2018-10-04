@@ -1,6 +1,6 @@
 # lazy-out.js
 
-[🤦‍♀️ See Demo 🤦‍♀️](https://kurogedelic.github.io/lazy-out/)
+[🤦‍♀️ See Demo 🤦‍♀️](https://kurogedelic.github.io/lazy-out.js/)
 
 
 Rewrite "src" attributes of img element by scroll event. 
