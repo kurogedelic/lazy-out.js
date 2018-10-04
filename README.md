@@ -1,6 +1,6 @@
 # lazy-out.js
 
-[🤦‍♀️ See Demo 🤦‍♀️](https://kurogedelic.github.io/lazy-out/)
+[🤦‍♀️ See Demo 🤦‍♀️](https://kurogedelic.github.io/lazy-out.js/)
 
 
 Rewrite "src" attributes of img element by scroll event. 
@@ -19,6 +19,11 @@ A jQuery version of 3 or higher is recommended.
 <script src="lazy-out.js"></script>
 ```
 
+or CDN
+
+```html
+<script src="https://cdn.rawgit.com/kurogedelic/lazy-out.js/36bebd03/dist/lazy-out.min.js"></script>
+```
 
 Next, write the necessary items in the data attribute of `<img>`.
 
