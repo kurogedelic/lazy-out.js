@@ -5,181 +5,179 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>README</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/xcode.min.css" />
+    <title>lazy-out.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/xcode.min.css" />
 </head>
 
 <body>
-   
-   <div class="render @scope">
 
-  <div class="p-layout">
-   <aside class="l-body-sidebar">
-       
- 
-       <section class="p-sidebar__card">
-              <h1 id="toc_0">lazy-out.js</h1>
-           <p><a href="https://github.com/kurogedelic/lazy-out.js" class="btn">View on GitHub</a></p>
-              
-           <ul class="p-list n-page-index">
-               <li class="p-list__item">
-                     <li class="p-list__item"><a href="#toc_1" class="e-anchor">How to Use</a></li>
-                     <li class="p-list__item"><a href="#toc_3" class="e-anchor">Setting</a></li>
-                     <li class="p-list__item"><a href="#toc_4" class="e-anchor">On Wordpress use</a></li>
-                     <li class="p-list__item"><a href="#toc_5" class="e-anchor">Demo</a></li>
-                     <li class="p-list__item"><a href="#toc_6" class="e-anchor">Impressions</a></li>
-               
-           </ul>
-           
-       </section>
-       
-   </aside>
-   
-   <main class="l-body-main">
-   <section class="p-section">
+    <div class="render @scope">
+
+        <div class="p-layout">
+            <aside class="l-body-sidebar">
 
 
+                <section class="p-sidebar__card">
+                    <h1 id="toc_0">lazy-out.js</h1>
+                    <p><a href="https://github.com/kurogedelic/lazy-out.js" class="btn">View on GitHub</a></p>
 
-    <p>Rewrite <q>src</q> attributes of img element by scroll event. <br>
-        You write <strong><q>lazy</q> image URL</strong> and <strong>original image URL</strong> in <strong>data attribute</strong> of the img element. <br>
-        You need jQuery 3 + to run this script.</p>
+                    <ul class="p-list n-page-index">
+                        <li class="p-list__item">
+                        <li class="p-list__item"><a href="#toc_1" class="e-anchor">How to Use</a></li>
+                        <li class="p-list__item"><a href="#toc_3" class="e-anchor">Setting</a></li>
+                        <li class="p-list__item"><a href="#toc_4" class="e-anchor">On Wordpress use</a></li>
+                        <li class="p-list__item"><a href="#toc_5" class="e-anchor">Demo</a></li>
+                        <li class="p-list__item"><a href="#toc_6" class="e-anchor">Impressions</a></li>
 
-    <p>This script was created to easily implement Lazy-Load with Wordpress.</p>
+                    </ul>
 
-    <h2 id="toc_1">Hot to Use 🤧</h2>
+                </section>
 
-    <p>At first, read jQuery and lazy-load just before the end of
+            </aside>
 
-        <code>&lt;body&gt;</code> tag.<br>
-            A jQuery version of 3 or higher is recommended.</p>
+            <main class="l-body-main">
+                <section class="p-section">
 
-    <div>
-        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+
+
+                    <p>Rewrite <q>src</q> attributes of img element by scroll event. <br>
+                        You write <strong><q>lazy</q> image URL</strong> and <strong>original image URL</strong> in <strong>data attribute</strong> of the img element. <br>
+                        You need jQuery 3 + to run this script.</p>
+
+                    <p>This script was created to easily implement Lazy-Load with Wordpress.</p>
+
+                    <h2 id="toc_1">Hot to Use 🤧</h2>
+
+                    <p>At first, read jQuery and lazy-load just before the end of
+
+                        <code>&lt;body&gt;</code> tag.<br>
+                        A jQuery version of 3 or higher is recommended.</p>
+
+                    <div>
+                        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;lazy-out.js&quot;&gt;&lt;/script&gt;</code></pre>
-    </div>
+                    </div>
 
-    <p>Next, write the necessary items in the data attribute of <code>&lt;img&gt;</code>.</p>
+                    <p>Next, write the necessary items in the data attribute of <code>&lt;img&gt;</code>.</p>
 
-    <p><code>data-orig-file</code> URL of the original-image<br>
-        <code>data-lazy-src</code> URL of the Lazy-image<br>
-        <code>data-orig-size</code> size of the original-image</p>
+                    <p><code>data-orig-file</code> URL of the original-image<br>
+                        <code>data-lazy-src</code> URL of the Lazy-image<br>
+                        <code>data-orig-size</code> size of the original-image</p>
 
-    <blockquote>
-        <p><code>data-orig-size</code> will work without filling in.<br>
-            In this case, it is displayed in the size of the image to be read at the beginning.</p>
-    </blockquote>
+                    <blockquote>
+                        <p><code>data-orig-size</code> will work without filling in.<br>
+                            In this case, it is displayed in the size of the image to be read at the beginning.</p>
+                    </blockquote>
 
-    <div>
-        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;img 
+                    <div>
+                        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;img 
 class=&quot;lazy&quot;
 data-orig-file=&quot;img/photo-original.jpg&quot;
 data-orig-size=&quot;1200,588&quot;
 data-lazy-src=&quot;img/photo-lazy.jpg&quot; &gt;</code></pre>
-    </div>
+                    </div>
 
-    <h3 id="toc_2">Working</h3>
+                    <h3 id="toc_2">Working</h3>
 
-    <p>When the page loads it looks like this in DOM,</p>
+                    <p>When the page loads it looks like this in DOM,</p>
 
-    <div>
-        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;img class=&quot;lazy&quot; src=&quot;img/photo-lazy.jpg&quot; width=&quot;1200&quot; height=&quot;588&quot;&gt;</code></pre>
-    </div>
+                    <div>
+                        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;img class=&quot;lazy&quot; src=&quot;img/photo-lazy.jpg&quot; width=&quot;1200&quot; height=&quot;588&quot;&gt;</code></pre>
+                    </div>
 
-    <blockquote>
-        <p>If <code>src</code> is specified for<code>&lt;img&gt;</code>it will be deleted.</p>
-    </blockquote>
+                    <blockquote>
+                        <p>If <code>src</code> is specified for<code>&lt;img&gt;</code>it will be deleted.</p>
+                    </blockquote>
 
-    <p>When img scrolls to the threshold-level,</p>
+                    <p>When img scrolls to the threshold-level,</p>
 
-    <div>
-        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;img class=&quot;lazy-done&quot; src=&quot;img/photo-original.jpg&quot; width=&quot;1200&quot; height=&quot;588&quot;&gt;</code></pre>
-    </div>
+                    <div>
+                        <pre class="highlight highlight-text-html-basic  line-numbers"><code class="language-markup">&lt;img class=&quot;lazy-done&quot; src=&quot;img/photo-original.jpg&quot; width=&quot;1200&quot; height=&quot;588&quot;&gt;</code></pre>
+                    </div>
 
-    <h2 id="toc_3">Setting 🤧</h2>
+                    <h2 id="toc_3">Setting 🤧</h2>
 
-    <p>JSON for setting is written at the head of lazy-load.js.</p>
+                    <p>JSON for setting is written at the head of lazy-load.js.</p>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Default</th>
-                <th>Description</th>
-            </tr>
-        </thead>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
 
-        <tbody>
-            <tr>
-                <td><q>lazySrc</q></td>
-                <td>string</td>
-                <td>lazy-src</td>
-                <td>data attribute name of Lazy image URL</td>
-            </tr>
-            <tr>
-                <td><q>originalSrc</q></td>
-                <td>string</td>
-                <td>orig-file</td>
-                <td>data attribute name of original image URL</td>
-            </tr>
-            <tr>
-                <td><q>originalSize</q></td>
-                <td>string</td>
-                <td>orig-size</td>
-                <td>data attribute name of priginal image size</td>
-            </tr>
-            <tr>
-                <td><q>threshold</q></td>
-                <td>numeric</td>
-                <td>300</td>
-                <td>threshold level from page-top</td>
-            </tr>
-        </tbody>
-    </table>
+                        <tbody>
+                            <tr>
+                                <td><q>lazySrc</q></td>
+                                <td>string</td>
+                                <td>lazy-src</td>
+                                <td>data attribute name of Lazy image URL</td>
+                            </tr>
+                            <tr>
+                                <td><q>originalSrc</q></td>
+                                <td>string</td>
+                                <td>orig-file</td>
+                                <td>data attribute name of original image URL</td>
+                            </tr>
+                            <tr>
+                                <td><q>originalSize</q></td>
+                                <td>string</td>
+                                <td>orig-size</td>
+                                <td>data attribute name of priginal image size</td>
+                            </tr>
+                            <tr>
+                                <td><q>threshold</q></td>
+                                <td>numeric</td>
+                                <td>300</td>
+                                <td>threshold level from page-top</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <h2 id="toc_4">In Wordpress use 🤧</h2>
+                    <h2 id="toc_4">In Wordpress use 🤧</h2>
 
-    <p>For images in articles, data attributes are automatically written by using <q>Lazy Load</q> of <q>Jetpack</q>.</p>
+                    <p>For images in articles, data attributes are automatically written by using <q>Lazy Load</q> of <q>Jetpack</q>.</p>
 
-    <p>On other pages (eg article list loop) you can implement URL by writing it to data attributes, by PHP.</p>
+                    <p>On other pages (eg article list loop) you can implement URL by writing it to data attributes, by PHP.</p>
 
-    <p>Example;</p>
+                    <p>Example;</p>
 
-    <div>
-        <pre class="highlight highlight-text-html-basic line-numbers"><code class="language-php">&lt;img 
+                    <div>
+                        <pre class="highlight highlight-text-html-basic line-numbers"><code class="language-php">&lt;img 
 class=&quot;lazy&quot;
 data-orig-file=&quot;&lt;? echo get_the_post_thumbnail_url(get_the_ID(), &#39;large&#39;); ?&gt;&quot;
 data-lazy-src=&quot;&lt;? echo get_the_post_thumbnail_url(get_the_ID(), &#39;thumbnail&#39;); ?&gt;&quot; &gt;</code></pre>
+                    </div>
+
+                    <blockquote>
+                        <p>With <code>wp_get_attachment_image_src</code> you can also get the thumbnail size for<code>data-orig-size</code>.</p>
+                    </blockquote>
+                    <h2 id="toc_5">Demo 🤧</h2>
+                    <figure>
+                        <img src="" alt="" class="lazy" data-orig-file="asset/original-redframe-whitelight.jpeg" data-lazy-src="asset/lazy-redframe-whitelight.jpeg" data-orig-size="1125,750">
+                    </figure>
+
+                    <figure>
+                        <img src="" alt="" class="lazy" data-orig-file="asset/original-sandwitch.jpeg" data-lazy-src="asset/lazy-sandwitch.jpeg" data-orig-size="1125,750">
+                    </figure>
+                    <h2 id="toc_6">Impressions 🙇</h2>
+
+                    <p>I am amateur with regard to JS.<br>
+                        Please tell me if there is a better way.<br>
+                        Also, I am bad at English</p>
+
+                    <p>thank you<br>
+                        ❤️</p>
+
+                </section>
+            </main>
+        </div>
     </div>
-
-    <blockquote>
-        <p>With <code>wp_get_attachment_image_src</code> you can also get the thumbnail size for<code>data-orig-size</code>.</p>
-    </blockquote>
-    <h2 id="toc_5">Demo 🤧</h2>
-    <figure>
- <img src="" alt="" class="lazy" data-orig-file="asset/original-redframe-whitelight.jpeg"
-data-lazy-src="asset/lazy-redframe-whitelight.jpeg" data-orig-size="1125,750">
-       </figure>
-       
-           <figure>
- <img src="" alt="" class="lazy" data-orig-file="asset/original-sandwitch.jpeg"
-data-lazy-src="asset/lazy-sandwitch.jpeg" data-orig-size="1125,750">
-       </figure>
-    <h2 id="toc_6">Impressions 🙇</h2>
-
-    <p>I am amateur with regard to JS.<br>
-        Please tell me if there is a better way.<br>
-        Also, I am bad at English</p>
-
-    <p>thank you<br>
-        ❤️</p>
-        
-       </section>
-</main>
-</div>
-</div>
     <script type="text/x-mathjax-config">
         (function () {
 
@@ -199,7 +197,7 @@ if (typeof MathJaxListener !== 'undefined') {
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="lazy-out.js"></script>
 
 </body>
