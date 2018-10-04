@@ -1,8 +1,10 @@
 # lazy-out.js
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![v.1.0](https://img.shields.io/badge/version-1.0-red.svg)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+![v.1.0](https://img.shields.io/badge/version-1.0-red.svg)
 
 [🇯🇵日本語はこちら🇯🇵](https://teletakt.red/archives/339)
+
 [🤦‍♀️ See Demo 🤦‍♀️](https://kurogedelic.github.io/lazy-out.js/)
 
 
